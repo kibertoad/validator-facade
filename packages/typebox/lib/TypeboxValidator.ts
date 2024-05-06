@@ -1,6 +1,5 @@
 import type { StaticDecode, TSchema } from '@sinclair/typebox'
-import type { TypeCheck } from '@sinclair/typebox/build/cjs/compiler/compiler'
-import { TypeCompiler, type ValueError } from '@sinclair/typebox/compiler'
+import { type TypeCheck, TypeCompiler, type ValueError } from '@sinclair/typebox/compiler'
 import { ValidationError, type ValidationErrorEntry, type Validator } from '@validator-facade/core'
 
 export class TypeboxValidator<T extends TSchema, R = StaticDecode<T>> implements Validator<R> {
