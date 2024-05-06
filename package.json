@@ -1,0 +1,15 @@
+{
+  "name": "@validator-facade/parent",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
